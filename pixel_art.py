@@ -1,5 +1,5 @@
-#import sys
-#sys.setExecutionLimit(120000)
+import sys
+sys.setExecutionLimit(120000)
 import turtle
 tina = turtle.Turtle()
 tina.shape("turtle")
