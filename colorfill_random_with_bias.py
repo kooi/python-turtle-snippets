@@ -13,9 +13,9 @@ def random_color(w_r=1.0, b_r=0.0, w_g=1.0, b_g=0.0, w_b=1.0, b_b=0.0):
     if w_b + b_b > 1.0:
         w_b = 1.0 - b_b
     return (
-        random()*w_r+b_r, 
-        random()*w_g+b_g, 
-        random()*w_b+b_b
+        (random()*w_r+b_r)*255, 
+        (random()*w_g+b_g)*255, 
+        (random()*w_b+b_b)*255
     )
 
 def maaknhoek(n):
@@ -26,10 +26,10 @@ def maaknhoek(n):
 
 for j in range(1, 10, 2):
     n = 1000
-    tina.getscreen().tracer(0)
+    turtle.Screen().tracer(100)
     for i in range(n):
         tina.pencolor(random_color(b_b=j/10.0))
         maaknhoek(j)
         tina.left(360.0/n)
-    tina.getscreen().update()
+#    turtle.Screen().update()
     
