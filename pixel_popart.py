@@ -106,7 +106,7 @@ def draw_image(img, d, pal):
 
 size = 10
 tina.speed(0)
-tina.getscreen().tracer(0)
+turtle.Screen().tracer(10)
 tina.penup()
 tina.goto(-160,160)
 tina.pendown()
@@ -118,5 +118,5 @@ tina.forward(16*size)
 tina.pendown()
 draw_image(kirby, size, palette2)
 draw_image(kirby, size, palette3)
-tina.getscreen().update()
-tina.getscreen().exitonclick()
+turtle.Screen().update()
+turtle.Screen().exitonclick()
