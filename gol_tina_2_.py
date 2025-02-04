@@ -81,11 +81,10 @@ def y_to_j(y):
 
 turtle.Screen().onscreenclick(click)
 turtle.Screen().tracer(0)
-done = False
 
 petridish = [[1 if random.random() > .8 else 0 for x in range(GRID_SIZE_X)] for y in range(GRID_SIZE_Y)]
 
-while not done:
+while True:
   turtle.Screen().bgcolor( PALETTE[2] )
 
   tina.goto(-(GRID_SIZE_X/2)*(PIXEL_SIZE+PIXEL_MARGIN) , (GRID_SIZE_Y/2)*(PIXEL_SIZE+PIXEL_MARGIN))
