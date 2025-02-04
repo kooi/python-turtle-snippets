@@ -102,5 +102,5 @@ while True:
       tina.pendown()
 
   petridish = evolve()
-  time.sleep(1.0/10)
+  time.sleep(1.0/5)
   turtle.Screen().update()
