@@ -6,4 +6,4 @@ tina.speed(0)
 def do_click(x,y):
     tina.goto(x,y)
 
-tina.getscreen().onclick(do_click)
+turtle.Screen().onclick(do_click)
