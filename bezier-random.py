@@ -51,7 +51,7 @@ def do_click(x,y):
             g = g + dg if g + dg < 1.0 else g - dg
             db = 2*Db*random.random()-Db
             b = b + db if b + db < 1.0 else b - db
-            tina.pencolor(r, g, b)
+            tina.pencolor(r*255, g*255, b*255)
             tina.goto(point[0], point[1])
             
         path = []
