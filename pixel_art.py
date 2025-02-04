@@ -74,10 +74,10 @@ def draw_image(img, d):
         tina.left(90)
 
 tina.speed(0)
-tina.getscreen().tracer(0)
+#turtle.Screen().tracer(10)
 tina.penup()
 tina.goto(-200,200)
 tina.pendown()
 draw_image(kirby, 20)
-tina.getscreen().update()
-tina.getscreen().exitonclick()
+#turtle.Screen().update()
+#turtle.Screen().exitonclick()
