@@ -2,7 +2,7 @@ import turtle
 tina = turtle.Turtle()
 tina.shape("turtle")
 tina.speed(0)
-#tina.getscreen().tracer(0)
+turtle.Screen().tracer(10)
 
 
 def tree(d, s):
@@ -20,7 +20,7 @@ tina.pencolor("dark green")
 tina.left(90)
 tina.backward(50)
 tree(15, 50)
-#tina.getscreen().update()
+#turtle.Screen().update()
 
 
 
